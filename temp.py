@@ -1,16 +1,16 @@
 def convert_temp() :
-    tf = int(input("Enter a temperature in Fahrenheit:"))
-    tf = convert_to_celcius()
-print("The temperature in Fahrenheit is:",tf)
-x = print("The temperature in Celsius is:",tc)
-    
-y = print("The temperature in Kelvin is:",tk)
+    tf = eval(input("Enter a temperature in Fahrenheit:"))
+    print("The temperature in Fahrenheit is:", tf)
+    convert_to_celcius(tf)   
 
-def convert_to_celcius(tf):
+def convert_to_celcius(tf,tc):
     tc = 5/9(tf-32)
-    return(x)
+    print("The temperature in Celsius is:",tc)
+    return    
+
+def convert_to_kelvin(tc,tk):
+    tk = (tc+273.15)
+    print("The temperature in Kelvin is:",tk)
     
-def convert_to_kelvin():
-    tk = 5/9(tf-32)
-    return(y)
-convert_temp()
+
+
